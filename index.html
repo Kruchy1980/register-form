@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/bookmark-icon/register-form.svg">
+    <title>Register form</title>
+    <!-- Google fonts import - Dancing Script  and Montserat-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class="reg-form">
+            <!-- title -->
+            <h1 class="reg-title">Register form!</h1>
+            <!-- form -->
+            <div class="form-box">
+                <!-- Username -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your name">
+                <p class="error-text">error</p>
+            </div>
+
+            <div class="form-box">
+                <!-- Password -->
+                <label for="password">Password:</label>
+                <input type="password" placeholder="Enter your password" id="password">
+                <p class="error-text">error</p>
+            </div>
+
+            <div class="form-box">
+                <!-- Repeate Password -->
+                <label for="password-repeater">Repeat Password:</label>
+                <input type="password" placeholder="Reenter your password" id="repeat-password">
+                <p class="error-text">error</p>
+            </div>
+
+            <div class="form-box">
+                <!-- Email -->
+                <label for="email">Email Address:</label>
+                <input type="email" placeholder="Enter your email address" id="email">
+                <p class="error-text">error</p>
+            </div>
+
+
+            <!-- Form buttons -->
+            <div class="control-buttons">
+                <button class="clear">Clear Form</button>
+                <button class="send">Send</button>
+            </div>
+
+            <div class="popup">
+                <!-- popup text -->
+                <p class="popup-text">The form was send successfully! ;)</p>
+                <!-- Closing popup -->
+                <button class="close">Close</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

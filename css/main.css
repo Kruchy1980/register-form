@@ -1,0 +1,234 @@
+/* Main */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(315deg, #4b0df5c4 0%, #0099ff 32%);
+}
+
+
+/* Wrapper */
+
+.wrapper {
+    width: 440px;
+    min-width: 280px;
+    margin: 0 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #222;
+    border-radius: 20px;
+}
+
+
+/* Form in general */
+
+.reg-form {
+    padding: 40px;
+    font-size: 20px;
+}
+
+
+/* Title */
+
+.reg-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+/* Form box */
+
+.form-box {
+    margin-bottom: 15px;
+}
+
+
+/* Labels */
+
+.form-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* Inputs */
+
+.form-box input {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.form-box input:focus {
+    border: 1px solid #57a1df;
+    background-color: #033f7016;
+}
+
+
+/* Errors */
+
+
+/* Paragraph in general */
+
+.form-box p {
+    margin: 5px 0 0 10px;
+    font-size: 14px;
+}
+
+
+/* If error exists */
+
+.error-text {
+    margin: 5px 0 0 10px;
+    font-size: 14px;
+    color: #c40404;
+    visibility: hidden;
+}
+
+
+/* Buttons */
+
+.control-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Buttons all */
+
+.send,
+.clear,
+.close {
+    display: block;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color, color 0.3s;
+    outline: none;
+}
+
+
+/* Send button */
+
+.send {
+    color: #eee;
+    background-color: #029602;
+}
+
+.send:hover {
+    background-color: #024902;
+}
+
+
+/* Clear Button */
+
+.clear {
+    color: #eee;
+    background-color: #0d0ddb;
+}
+
+.clear:hover {
+    background-color: #020283;
+}
+
+
+/* Close button */
+
+.close {
+    margin-top: 20px;
+    color: #111;
+    background-color: #b10404;
+}
+
+.close:hover {
+    color: #ccc;
+    background-color: #660101;
+}
+
+
+/* Popup */
+
+.popup {
+    width: 280px;
+    position: absolute;
+    top: -300px;
+    /* To hide the popup now*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 3px #333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+@media (min-width: 520px) {
+    .popup {
+        width: 450px;
+    }
+}
+
+
+/* Popup text */
+
+.popup-text {
+    font-size: 16px;
+}
+
+@media (min-width: 520px) {
+    .popup-text {
+        font-size: 24px;
+    }
+}
+
+
+/* Extended class for error input display */
+
+
+/* Error */
+
+.form-box.error input {
+    border: 1px solid #fa0021;
+    background-color: #fa000016;
+}
+
+
+/* Correct */
+
+.form-box.correct input {
+    border: 1px solid #08fa00;
+    background-color: #00fa4b16;
+}
+
+
+/* Show popup */
+
+.show-popup {
+    top: 100px;
+}
+
+.button-disable,
+.button-disable:hover {
+    background-color: #77777780;
+    color: #fff;
+}
